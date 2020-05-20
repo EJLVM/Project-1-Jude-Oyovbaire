@@ -1,0 +1,20 @@
+mysql -h database-1.cfhms6swxcg6.us-west-1.rds.amazonaws.com -P 3306 -u admin -p
+
+MySQL [(none)]> CREATE DATABASE GamesDB;
+Query OK, 1 row affected (0.01 sec)
+
+MySQL [(none)]> use GamesDB;
+Database changed
+
+MySQL [GamesDB]> CREATE TABLE IF NOT EXISTS Games (
+    -> game_id INT AUTO_INCREMENT,
+    -> title VARCHAR(255) NOT NULL,
+    -> author VARCHAR(255),
+    -> publish_date DATE,
+    -> description TEXT,
+    -> PRIMARY KEY (game_id)
+    -> )  ENGINE=INNODB;
+Query OK, 0 rows affected (0.06 sec)
+
+MySQL [GamesDB]> INSERT INTO Games(title,author) VALUES ('Learn AWS RDS','John mith');
+Query OK, 1 row affected (0.01 sec)

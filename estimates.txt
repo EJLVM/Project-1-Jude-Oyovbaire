@@ -1,0 +1,12 @@
+1. Minimum RTO for a single AZ outage:
+The minimum duration of a service interuption in a single AZ outage is 3 minutes
+
+
+2. Minimum RTO for a single region outage
+The minimum duration of a service interuption in a single Region outage is 5 minutes
+
+3. Minimum RPO for a single AZ outage
+The minimum amount of time over which you can lose data in a single AZ outage is 5 minutes
+
+4. Minimum RPO for a single region outage
+The minimum amount of time over which you can lose data in a single Region outage is 10 minutes

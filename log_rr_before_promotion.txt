@@ -1,0 +1,12 @@
+mysql -h database-readreplica.c1dleyw7b7uh.us-west-2.rds.amazonaws.com -P 3306 -u admin -p
+
+MySQL [(none)]> CREATE DATABASE DocumentsDB;
+ERROR 1290 (HY000): The MySQL server is running with the --read-only option so it cannot execute this statement
+
+MySQL [(none)]> use DocumentsDB;
+Reading table information for completion of table and column names
+You can turn off this feature to get a quicker startup with -A
+Database changed
+
+MySQL [DocumentsDB]> INSERT INTO Documents(title,author) VALUES ('Read Replica Tests','Johnny Cash');
+ERROR 1290 (HY000): The MySQL server is running with the --read-only option so it cannot execute this statement
