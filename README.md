@@ -1,2 +1,3 @@
-# Udacity-Project-1 (AWS Cloud Architect)
- Recoverability In AWS project (Udacity)
+# Udacity Nanadegree (AWS Cloud Architect)
+Udacity Project 1: Recoverability In AWS
+
